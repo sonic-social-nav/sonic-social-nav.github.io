@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FSSR6942QL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FSSR6942QL');
+    </script>
+
+    <title>Explore until Confident: Efficient Exploration for Embodied Question Answering</title>
+    <link rel="icon" type="image/png" href="img/favicon_2.png">
+
+    <meta name="description" content="Explore until Confident: Efficient Exploration for Embodied Question Answering">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- <link rel="stylesheet" href="css/bulma.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/bulma-carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/bulma-slider.min.css"> -->
+    <link rel="stylesheet" href="css/bulma-myscope.css">
+
+    <!-- https://github.com/jgthms/bulma/issues/302#issuecomment-441890938 Follow this to use bulma style here without conflicts with app.css. I put bulma.min.css, bulma-carousel.min.css, and bulma-slider.min.css into a single file before applying less. -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    <script src="js/bulma-carousel.min.js"></script>
+    <script src="js/bulma-slider.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/app.js"></script>
+
+    <style>
+        .nav-pills {
+          position: relative;
+          display: inline;
+        }
+        .imtip {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="main">
+        <div class="row mt-4">
+            <h2 class="col-md-12 text-center">
+                <span style="font-weight: 900;">SoNIC</span>: </br> Safe <span style="font-weight: 900;">So</span>cial <span style="font-weight: 900;">N</span>avigation with Adaptive Conformal <span style="font-weight: 900;">I</span>nference and <span style="font-weight: 900;">C</span>onstrained Reinforcement Learning</br>
+            </h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                <!-- <br> -->
+                <li><a href="//jyao97.github.io">Jianpeng Yao</a></li>
+                <li><a href="//xiaopanz.github.io/">Xiaopan Zhang</a></li>
+                <li>Yu Xia</li>
+                <li>Zejing Wang</li>
+                <li><a href="https://vcg.ece.ucr.edu/amit">Amit K. Roy-Chowdhury</a></li>
+                <li><a href="https://jiachenli94.github.io/">Jiachen Li</a></li>
+                <!-- <br> -->
+                <br>
+                <br>
+                    <a href="https://www.tri.global/">
+                        <image src="img/UCR_logo.svg" height="50px"> 
+                    </a>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row justify-content-md-center">
+            <div class="col-md-2 text-center">
+                <!-- <a href=""> TODO -->
+                    <img src="img/paper_img.png" height="45px">
+                    <h4><strong>Paper</strong></h4>
+                <!-- </a> -->
+            </div>
+            <div class="col-md-2 text-center">
+                <!-- <a href=""> -->
+                    <img src="img/youtube_icon.png" height="45px">
+                    <h4><strong>Video</strong></h4>
+                <!-- </a> -->
+            </div>
+            <div class="col-md-2 text-center">
+                <!-- <a href=""> -->
+                    <img src="img/github.png" height="45px">
+                    <h4><strong>Code</strong></h4>
+                <!-- </a> -->
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-10">
+                <br>
+                <h5 class="text-justify text-center">
+                    The state-of-the-art algorithm for social navigation that combines adaptive conformal inference and constrained reinforcement learning with spatial relaxation to generate safe robot trajectories that adhere to social norms.
+                </h5>
+                <br>
+            </div>
+        </div>
+
+        <div class='myscope'>
+          <section class="hero is-light is-small">
+            <div class="hero-body">
+              <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+
+                  <div class="item-0">
+                    <video poster="" id="0" autoplay controls muted loop playsinline height="100%">
+                        <source src="videos/SoNIC_in_dist.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item-1">
+                    <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+                        <source src="videos/SoNIC_with_rushing_0.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item-2">
+                    <video poster="" id="2" autoplay controls muted loop playsinline height="100%">
+                        <source src="videos/SoNIC_with_rushing_1.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item-3">
+                    <video poster="" id="4" autoplay controls muted loop playsinline height="100%">
+                        <source src="videos/SoNIC_with_SF.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <br>
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-10">
+                <h5 class="text-justify text-center">
+                    SoNIC Performance in Different Environments
+                </h5>
+            </div>
+        </div>
+        <br>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-10">
+                <h3 class="mt-4 mb-2">
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Reinforcement Learning (RL) has enabled social robots to generate trajectories without human-designed rules or interventions, which makes it more effective than hardcoded systems for generalizing to complex real-world scenarios. However, social navigation is a safety-critical task that requires robots to avoid collisions with pedestrians while previous RLbased solutions fall short in safety performance in complex environments. To enhance the safety of RL policies, to the best of our knowledge, we propose the first algorithm, SoNIC, that integrates adaptive conformal inference (ACI) with constrained reinforcement learning (CRL) to learn safe policies for social navigation. More specifically, our method augments RL observations with ACI-generated nonconformity scores and provides explicit guidance for agents to leverage the uncertainty metrics to avoid safety-critical areas by incorporating safety constraints with spatial relaxation. Our method outperforms state-of-the-art baselines in terms of both safety and adherence to social norms by a large margin and demonstrates much stronger robustness to out-of-distribution scenarios.    
+                </p>
+            </div>
+        </div>
+        
+        <!-- TODO -->
+        <!-- <div class="row justify-content-md-center">
+            <div class="col-md-6 text-center">
+                <iframe width="560" height="285" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div> -->
+
+        <!-- <div class="row justify-content-md-center">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">LLMs can generate plans and write robot code 📝 but they can also make mistakes. How do we get LLMs to 𝘬𝘯𝘰𝘸 𝘸𝘩𝘦𝘯 𝘵𝘩𝘦𝘺 𝘥𝘰𝘯&#39;𝘵 𝘬𝘯𝘰𝘸 🤷 and ask for help?<br><br>Read more on how we can do this (with statistical guarantees) for LLMs on robots 👇<a href="https://t.co/D7mHGzNP3p">https://t.co/D7mHGzNP3p</a> <a href="https://t.co/M9lUqlZ5cB">pic.twitter.com/M9lUqlZ5cB</a></p>&mdash; Allen Z. Ren (@allenzren) <a href="https://twitter.com/allenzren/status/1677000811803443213?ref_src=twsrc%5Etfw">July 6, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div> -->
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-10">
+                <br>
+                <h3>
+                    Key Ideas and Contributions
+                </h3>
+                <p class="text-justify">
+                    <br><p style="text-align:center;">
+                        <image src="img/overview.svg" width="100%">
+                    </p>
+                    <strong>1) Framework with ACI and CRL</strong>: We develop a novel framework that integrates nonconformity scores generated by ACI with CRL, which not only enhances the observation of RL agents but also directly guides the learning process of RL agents. <br>
+                    <strong>2) Spatial Relaxtion</strong>: We propose a technique to increase the applicability of CRL in the context of social navigation by introducing spatial relaxation. Compared to previous methods, spatial relaxation provides richer cost feedback and facilitates convergence without sacrificing safety. <br>
+                    <strong>3) Performance Boost</strong>: Our method achieves state-of-the-art (SOTA) performance in social navigation in both safety and adherence to social norms, outperforming baselines by a large margin. Our method also shows much stronger robustness to out-of-distribution (OOD) scenarios.<br>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-10">
+                <br>
+                <h3>
+                    Test Results in In-distribution and OOD Settings
+                </h3>
+                <p class="text-justify">
+                    <br><p style="text-align:center;">
+                        <image src="img/tables_sonic.png" width="100%">
+                    </p>
+                    <strong>Quantitative Analysis</strong>: In this paper, we validated SoNIC in both in-distribution and OOD settings. The experimental results demonstrate that SoNIC achieves SOTA performance in both safety and adherence to social norms and shows strong robustness to OOD scenarios. Please refer to the paper for more details. <br>
+            </div>
+            <br>
+        </div>
+        <br>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-10">
+                <h3>
+                    Citation 
+                </h3>
+                <!-- TODO -->
+                <!-- <a href="">[arxiv version]</a> -->
+                <div class="form-group col-md-12">
+                    <textarea id="bibtex" class="form-control" rows="6" readonly>
+@inproceedings{yao2024sonic,
+    title={SoNIC: Safe Social Navigation with Adaptive Conformal Inference and Constrained Reinforcement Learning},
+    author={Yao, Jianpeng and Zhang, Xiaopan and Xia, Yu and Roy-Chowdhury, Amit K and Li, Jiachen},
+    year={2024}
+}</textarea>
+                </div>
+            </div>
+        </div>
+        <!-- TODO -->
+        <!-- <div class="row justify-content-md-center mt-4">
+            <div class="col-md-12 col-lg-10">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                </p>
+            </div>
+        </div> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
